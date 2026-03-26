@@ -1,17 +1,15 @@
 package program;
 
-import entidade.Usuario;
 
-import java.util.Locale;
-import java.util.Scanner;
+import entidade.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        Locale.setDefault(Locale.US);
+        Programador programador = new Programador();
+        DevWeb devWeb = new DevWeb();
 
-        Usuario usuario = new Usuario("999999999", "DFSF");
-
+        programador.candidatarPresidente();
 
     }
-    }
+}
